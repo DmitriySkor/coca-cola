@@ -4,6 +4,8 @@ setTimeout(function() {
  }, 3000);
 
 
+ 
+
  function burgerMenu(selector) {
     let menu = $(selector);
     let button = menu.find('.burger-menu_button', '.burger-menu_lines');
@@ -30,3 +32,35 @@ setTimeout(function() {
   }
   
   burgerMenu('.burger-menu');
+
+  // TABS
+  +function () {
+
+    document.querySelector('.tab').classList.add('active')
+    document.querySelector('.tab-panel').classList.add('active')
+    
+    function selectPanel (e) {
+        var target = e.target.dataset.target
+    
+        document.querySelectorAll('.tab, .tab-panel').forEach(el => el.classList.remove('active'))
+        e.target.classList.add('active')
+        console.log(document.querySelector('.' + target))
+        document.querySelector('.' + target).classList.add('active')
+    }
+    
+    document.querySelectorAll('.tab').forEach(el => {
+        el.addEventListener('click', selectPanel)
+    })
+    
+    }();
+
+    if (document.documentElement.clientWidth > 768) {
+      new fullpage('#fullpage', {
+        //options here
+        licenseKey: 'gplv3-license',
+        autoScrolling:true,
+        scrollHorizontally: true
+    });
+    }
+
+    
