@@ -171,6 +171,10 @@
         height: auto;
     }
 
+    .about{
+        height: auto;
+    }
+
     .about_wrap{
         margin-top: 95px;
     }
@@ -191,6 +195,67 @@
 
     .tabs_header{
         justify-content: center;
+    }
+
+    .tab-panel{
+        padding-top: 0px;
+    }
+
+    .tabs-panels{
+        margin-top: 73px;
+    }
+
+    .tabs-panels .tab-panel{
+        border: none;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tab_img img{
+        width: 100%;
+        height: auto;
+    }
+
+    .tab_content_title{
+        font-size: 42px;
+    }
+
+    .tab_content_text{
+        font-size: 28px;
+    }
+
+    .form_row input{
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .contact_form{
+        max-width: 100%;
+    }
+
+    .form_row{
+        flex-wrap: wrap;
+        margin-bottom: 0px;
+    }
+
+    .form_row select{
+        max-width: 100%;
+        margin-right: 0px;
+        margin-bottom: 24px;
+    }
+
+    .form_row textarea{
+        margin-bottom: 24px;
+    }
+
+    .contacts{
+        background-position: center;
+    }
+
+    .burger-menu_nav{
+        width: 100%;
     }
 }
 @media (max-width: 575.98px) {}
